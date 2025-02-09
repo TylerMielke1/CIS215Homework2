@@ -6,9 +6,10 @@
     if ($CurrentHour <= 10) {
         $Hello = "Good Morning. Its bright and early.";
     } elseif ($CurrentHour <= 16) {
-        $Hello = "Good afternoon. Its about to get darker.";
-
-
+        $Hello = "Good Afternoon. Its about to get darker.";
+    } else {
+        $Hello = "Good Night. Its time to go to sleep. ";
+    }
 ?>
 
 <!DOCTYPE html>
@@ -19,6 +20,6 @@
     </head>   
 
     <body>
-        <h1><h1>
+        <h1><?php echo $Hello ?><h1>
     </body>
 </html>
