@@ -1,7 +1,7 @@
 <?php
-    date_default_timezone_set('EST');
+    date_default_timezone_set('America/New_York');
 
-    CurrentHour = date('H');
+    $CurrentHour = date('H');
 
     if ($CurrentHour <= 10) {
         $Hello = "Good Morning. Its bright and early.";
@@ -20,6 +20,6 @@
     </head>   
 
     <body>
-        <h1><?php echo $Hello ?><h1>
+        <h1><?php echo $Hello ?></h1>
     </body>
 </html>
