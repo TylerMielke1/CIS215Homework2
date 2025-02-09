@@ -1,9 +1,12 @@
 <?php
+    date_default_timezone_set('EST');
 
+    CurrentHour = date('H');
 
-
-
-
+    if ($CurrentHour <= 10) {
+        $Hello = "Good Morning. Its bright and early.";
+    } elseif ($CurrentHour <= 16) {
+        $Hello = "Good afternoon. Its about to get darker.";
 
 
 ?>
